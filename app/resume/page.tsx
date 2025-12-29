@@ -13,7 +13,7 @@ export default async function Resume() {
       </section>
 
       <h2 className="mt-[.85rem] mb-[.5rem]">Experience</h2>
-      <section className="pt-[.5rem] border-t border-[#D3D3D3]">
+      <section className="pt-[.5rem] border-t border-[#D3D3D3]"> 
         <div className="flex justify-between items-end">
           <h3>Senior Front End Developer</h3>
           <p>Dec 2023 - Present</p>
