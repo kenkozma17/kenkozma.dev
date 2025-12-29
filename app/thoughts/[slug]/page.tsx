@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { remark } from 'remark';
 import html from 'remark-html';
 import path from 'path';
