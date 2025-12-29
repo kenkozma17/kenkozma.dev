@@ -31,7 +31,7 @@ export default function SideNav() {
         </li>
         <li className="text-[1.15rem]">
           <Link className={`transition-[color] duration-[350ms] 
-              ${ pathname.includes('/thoughts') ? "text-[#000] hover:text-[#000]" : "text-[#808080]"}`}  
+              ${ pathname?.includes('/thoughts') ? "text-[#000] hover:text-[#000]" : "text-[#808080]"}`}  
             href="/thoughts">
             thoughts
           </Link>

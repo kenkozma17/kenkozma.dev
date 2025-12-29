@@ -26,9 +26,17 @@ export async function getPage(slug: string) {
   };
 }
 
-export default async function Page({ params }) {
-  const { slug } = await params
-  const thought = await getPage(slug);
+export type paramsType = {
+  slug: string;
+};
+
+interface PageProps {
+  params: paramsType;
+}
+
+export default async function Page({ params }: PageProps) {
+  const { slug } = await params;
+  const thought = await getPage(slug);   
   return (
     <section className="md-content">
       <div dangerouslySetInnerHTML={{ __html: thought.contentHtml }} />

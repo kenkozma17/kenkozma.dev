@@ -14,7 +14,7 @@ export type metaType = {
   title: string,
   description: string,
   date: string,
-  slug,
+  slug: string,
 };
 
 export function getAllThoughts(): Thought[] {

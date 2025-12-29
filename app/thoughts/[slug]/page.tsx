@@ -26,7 +26,15 @@ export async function getThoughts(slug: string) {
   };
 }
 
-export default async function Page({ params }) {
+export type paramsType = {
+  slug: string;
+};
+
+interface PageProps {
+  params: paramsType;
+}
+
+export default async function Page({ params }: PageProps) {
   const { slug } = await params
   const thought = await getThoughts(slug);
   return (
