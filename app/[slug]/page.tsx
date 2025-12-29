@@ -5,9 +5,9 @@ import matter from 'gray-matter';
 import fs from 'fs';
 import { ThoughtMeta } from '@/types/thoughts';
 
-export async function getHome(slug: string) {
+export async function getPage(slug: string) {
   const postsDirectory = path.join(process.cwd(), 'pages');
-  const fullPath = path.join(postsDirectory, 'home.md');
+  const fullPath = path.join(postsDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
  
   // Use gray-matter to parse the post metadata section
@@ -24,13 +24,15 @@ export async function getHome(slug: string) {
     contentHtml,
     meta: data as ThoughtMeta
   };
-} 
+}
 
-export default async function Home() {
-  const thought = await getHome('home');
+export default async function Page({ params }) {
+  const { slug } = await params
+  const thought = await getPage(slug);
   return (
     <section className="md-content">
       <div dangerouslySetInnerHTML={{ __html: thought.contentHtml }} />
     </section>
   );
 }
+
