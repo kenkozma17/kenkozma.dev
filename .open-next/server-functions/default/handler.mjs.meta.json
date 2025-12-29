@@ -3534,8 +3534,8 @@
       "imports": [],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js": {
-      "bytes": 5948,
+    ".open-next/server-functions/default/.next/server/app/resume/page_client-reference-manifest.js": {
+      "bytes": 6526,
       "imports": [],
       "format": "cjs"
     },
@@ -3544,12 +3544,12 @@
       "imports": [],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/[slug]/page_client-reference-manifest.js": {
-      "bytes": 6526,
+    ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js": {
+      "bytes": 5948,
       "imports": [],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/resume/page_client-reference-manifest.js": {
+    ".open-next/server-functions/default/.next/server/app/[slug]/page_client-reference-manifest.js": {
       "bytes": 6526,
       "imports": [],
       "format": "cjs"
@@ -3593,9 +3593,9 @@
           "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/thoughts/page_client-reference-manifest.js"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js",
+          "path": ".open-next/server-functions/default/.next/server/app/resume/page_client-reference-manifest.js",
           "kind": "require-call",
-          "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js"
+          "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/resume/page_client-reference-manifest.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js",
@@ -3603,14 +3603,14 @@
           "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js"
         },
         {
+          "path": ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js",
+          "kind": "require-call",
+          "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js"
+        },
+        {
           "path": ".open-next/server-functions/default/.next/server/app/[slug]/page_client-reference-manifest.js",
           "kind": "require-call",
           "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/[slug]/page_client-reference-manifest.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/resume/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/resume/page_client-reference-manifest.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/thoughts/[slug]/page_client-reference-manifest.js",
@@ -6000,14 +6000,9 @@
           "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/page_client-reference-manifest.js"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/resume/page_client-reference-manifest.js",
+          "path": ".open-next/server-functions/default/.next/server/app/thoughts/page_client-reference-manifest.js",
           "kind": "require-call",
-          "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/resume/page_client-reference-manifest.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js"
+          "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/thoughts/page_client-reference-manifest.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js",
@@ -6015,14 +6010,19 @@
           "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js"
         },
         {
+          "path": ".open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js",
+          "kind": "require-call",
+          "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/app/resume/page_client-reference-manifest.js",
+          "kind": "require-call",
+          "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/resume/page_client-reference-manifest.js"
+        },
+        {
           "path": ".open-next/server-functions/default/.next/server/app/[slug]/page_client-reference-manifest.js",
           "kind": "require-call",
           "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/[slug]/page_client-reference-manifest.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/thoughts/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/thoughts/page_client-reference-manifest.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/thoughts/[slug]/page_client-reference-manifest.js",
@@ -9793,16 +9793,16 @@
         ".open-next/server-functions/default/.next/server/app/thoughts/page_client-reference-manifest.js": {
           "bytesInOutput": 6234
         },
-        ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js": {
-          "bytesInOutput": 5714
+        ".open-next/server-functions/default/.next/server/app/resume/page_client-reference-manifest.js": {
+          "bytesInOutput": 6230
         },
         ".open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js": {
           "bytesInOutput": 6311
         },
-        ".open-next/server-functions/default/.next/server/app/[slug]/page_client-reference-manifest.js": {
-          "bytesInOutput": 6230
+        ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js": {
+          "bytesInOutput": 5714
         },
-        ".open-next/server-functions/default/.next/server/app/resume/page_client-reference-manifest.js": {
+        ".open-next/server-functions/default/.next/server/app/[slug]/page_client-reference-manifest.js": {
           "bytesInOutput": 6230
         },
         ".open-next/server-functions/default/.next/server/app/thoughts/[slug]/page_client-reference-manifest.js": {
