@@ -1,0 +1,10 @@
+{
+  "/[slug]/page": "/[slug]",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/resume/page": "/resume",
+  "/thoughts/[slug]/page": "/thoughts/[slug]",
+  "/thoughts/page": "/thoughts"
+}
