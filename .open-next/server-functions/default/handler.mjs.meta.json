@@ -5834,6 +5834,11 @@
           "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/page_client-reference-manifest.js"
         },
         {
+          "path": ".open-next/server-functions/default/.next/server/app/thoughts/page_client-reference-manifest.js",
+          "kind": "require-call",
+          "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/thoughts/page_client-reference-manifest.js"
+        },
+        {
           "path": ".open-next/server-functions/default/.next/server/app/resume/page_client-reference-manifest.js",
           "kind": "require-call",
           "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/resume/page_client-reference-manifest.js"
@@ -5847,11 +5852,6 @@
           "path": ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js",
           "kind": "require-call",
           "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/thoughts/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "/Users/kenkozma17/Projects/www/kenkozma.dev/.open-next/server-functions/default/.next/server/app/thoughts/page_client-reference-manifest.js"
         }
       ],
       "format": "cjs"
