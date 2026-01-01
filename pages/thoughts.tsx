@@ -62,7 +62,7 @@ export default function ThoughtsPage({ thoughts }: ThoughtsPageProps) {
   return (
     <section className="md-content thoughts">
       <h1>Thoughts</h1>
-      <p>This is the stuff</p>
+      <p>This is a description of these thoughts</p>
       <hr />
       <ul>
         {thoughts.map((thought, index) => (

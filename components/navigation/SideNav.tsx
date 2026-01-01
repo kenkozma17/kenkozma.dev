@@ -6,8 +6,8 @@ import { usePathname } from 'next/navigation';
 export default function SideNav() {
   const pathname = usePathname(); 
   return (
-    <nav className="xl:pr-[3.25rem] md:pr-[1.75rem] side-nav">
-      <ul className="text-right font-[lora-sans]">
+    <nav className="xl:pr-[3.25rem] md:pr-[1.75rem] md:border-none md:pb-0 md:mb-0 mb-[1.5rem] pb-[1rem] border-b border-[#D3D3D3] side-nav">
+      <ul className="flex md:flex-col flex-row md:justify-start justify-end gap-[1rem] md:gap-0 text-right font-[lora-sans]">
         <li className="text-[1.15rem]">
           <Link className={`transition-[color] duration-[350ms] 
               ${ pathname === "/" ? "text-[#000] hover:text-[#000]" : "text-[#808080]"}`} 

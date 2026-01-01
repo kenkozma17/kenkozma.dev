@@ -63,7 +63,7 @@ p, ul > li {
 .md-content hr {
   width: 100%; 
   margin-block-end: 1rem;
-  color: var(--foreground);
+  color: #D3D3D3;
 }
 
 .md-content ul, .md-content ol {
@@ -115,6 +115,10 @@ h4 {
 .thoughts ul > li > a {
   letter-spacing: .55px;    
   font-size: var(--text-sm);
+}
+
+.thoughts > h1 {
+  margin-bottom: 0; 
 }
 
 .thoughts p {

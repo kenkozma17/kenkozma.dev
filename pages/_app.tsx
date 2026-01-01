@@ -26,7 +26,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <div className={`${InterTight.variable} ${LoraSans.variable} antialiased`}>
       <div className="flex md:flex-row flex-col font-inter mx-auto relative xl:py-[4.25rem] xl:px-[6.75rem] md:p-[3.75rem] p-[1.5rem]">
         <SideNav />
-        <main className="max-w-2xl w-full border-l border-[#D3D3D3] xl:pl-[3.25rem] md:pl-[1.75rem]">
+        <main className="max-w-2xl w-full md:border-l md:border-[#D3D3D3] xl:pl-[3.25rem] md:pl-[1.75rem]">
           <Component {...pageProps} />
         </main>
       </div>

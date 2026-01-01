@@ -15,7 +15,7 @@ export default function Resume() {
 
       <h2 className="mt-[.85rem] mb-[.5rem]">Experience</h2>
       <section className="pt-[.5rem] border-t border-[#D3D3D3]"> 
-        <div className="flex justify-between items-end">
+        <div className="flex justify-between sm:items-end sm:flex-row flex-col">
           <h3>Senior Front End Developer</h3>
           <p>Dec 2023 - Present</p>
         </div>
@@ -34,7 +34,7 @@ export default function Resume() {
       </section>
 
       <section className="mt-4">
-        <div className="flex justify-between items-end">
+        <div className="flex justify-between sm:items-end sm:flex-row flex-col">
           <h3>Front End Developer</h3>
           <p>Feb 2023 - July 2023</p>
         </div>
@@ -53,7 +53,7 @@ export default function Resume() {
       </section>
 
       <section className="mt-4">
-        <div className="flex justify-between items-end">
+        <div className="flex justify-between sm:items-end sm:flex-row flex-col">
           <h3>Front End Engineer (Contract)</h3>
           <p>Apr 2022 - Feb 2023</p>
         </div>
@@ -66,7 +66,7 @@ export default function Resume() {
       </section>
 
       <section className="mt-4">
-        <div className="flex justify-between items-end">
+        <div className="flex justify-between sm:items-end sm:flex-row flex-col">
           <h3>Full Stack PHP Developer</h3>
           <p>Apr 2019 - Apr 2022</p>
         </div>
@@ -85,7 +85,7 @@ export default function Resume() {
       </section>
 
       <section className="mt-4">
-        <div className="flex justify-between items-end">
+        <div className="flex justify-between sm:items-end sm:flex-row flex-col">
           <h3>Full Stack PHP Developer</h3>
           <p>Apr 2022 - Feb 2023</p>
         </div>
@@ -99,7 +99,7 @@ export default function Resume() {
 
       <h2 className="mt-[.85rem] mb-[.5rem]">Education</h2>
       <section className="pt-[.5rem] border-t border-[#D3D3D3]">
-        <div className="flex justify-between items-end">
+        <div className="flex justify-between sm:items-end sm:flex-row flex-col">
           <h3>Bachelors of Science, Information Technology </h3>
           <p>March 2018</p>
         </div>
