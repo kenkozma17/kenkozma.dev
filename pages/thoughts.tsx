@@ -66,9 +66,9 @@ export default function ThoughtsPage({ thoughts }: ThoughtsPageProps) {
       <hr />
       <ul>
         {thoughts.map((thought, index) => (
-          <li className="" key={index}>
-            <span className="w-[6rem] inline-block mr-[1.15rem]">{thought.meta.date}</span>
-            <a href={`/thoughts/${thought.meta.slug}`}>
+          <li className="flex md:mb-[.25rem] mb-[.45rem] items-start" key={index}>
+            <span className="shrink-0 w-[6rem] inline-block mr-[1.15rem]">{thought.meta.date}</span>
+            <a className="underline-offset-[3px]" href={`/thoughts/${thought.meta.slug}`}>
               {thought.meta.title}
             </a>
           </li>
