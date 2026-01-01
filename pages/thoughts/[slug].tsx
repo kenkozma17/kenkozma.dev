@@ -60,9 +60,9 @@ interface Props {
 
 export default function ThoughtPage({ contentHtml, meta }: Props) {
   return (
-    <section className="md-content">
+    <section className="md-content thoughts">
       <h1>{meta.title}</h1>
-      <span>{meta.date}</span>
+      <p>{meta.date}</p>
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
     </section>
   );

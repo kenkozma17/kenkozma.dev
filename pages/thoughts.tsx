@@ -62,12 +62,12 @@ export default function ThoughtsPage({ thoughts }: ThoughtsPageProps) {
   return (
     <section className="md-content thoughts">
       <h1>Thoughts</h1>
-      <p>This is a description of these thoughts</p>
+      <p>Welcome to my personal blog where I share what I think is interesting in life.</p>
       <hr />
       <ul>
         {thoughts.map((thought, index) => (
           <li className="" key={index}>
-            <span className="mr-[2.15rem]">{thought.meta.date}</span>
+            <span className="w-[6rem] inline-block mr-[1.15rem]">{thought.meta.date}</span>
             <a href={`/thoughts/${thought.meta.slug}`}>
               {thought.meta.title}
             </a>

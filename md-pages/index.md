@@ -5,8 +5,12 @@ I've spent the majority of my career building interactive and functional web int
 
 In my free time, you'll find me trying to balance being a father, running and synchronizing naps with my little one. 
 
-Learn more about what I'm up to at [/thoughts.](/thoughts)
+Learn more about recent my [/projects](/projects) or what's on my mind at [/thoughts](/thoughts).
 
 ***
 
-[Email](mailto:kenkozma17@gmail.com) [Github](https://github.com) [Linkedin](https://linkedin.com/in/ken-koz)
+<div class="foot-links">
+
+  [Email](mailto:kenkozma17@gmail.com) [Github](https://github.com) [Linkedin](https://linkedin.com/in/ken-koz)
+
+</div>

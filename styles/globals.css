@@ -78,7 +78,15 @@ p, ul > li {
   list-style-type: disc;
 }
 
-.md-content p > a {
+.unstyled-list ul > li { 
+  list-style-type: none;
+} 
+
+.unstyled-list ul {
+  padding: 0; 
+}
+
+.foot-links a { 
   margin-inline-end: 1rem; 
 }
 

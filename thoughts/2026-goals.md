@@ -1,12 +1,10 @@
 ---
-title: Hello World
-date: "May 25, 2025"
+title: My Goals of 2026
+date: "Dec 28, 2025"
 description: My first thought post
 tags:
   - nextjs
   - markdown
 published: true
-slug: exercise
+slug: balance-as-a-dad
 ---
-
-# Exercise is good
