@@ -1,8 +1,15 @@
+// pages/thoughts/index.tsx
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { GetStaticProps } from 'next';
 
-const thoughtsDirectory = path.join(process.cwd(), 'thoughts');
+export type metaType = {
+  title: string;
+  description: string;
+  date: string;
+  slug: string;
+};
 
 export type Thought = {
   slug: string;
@@ -10,17 +17,15 @@ export type Thought = {
   meta: metaType;
 };
 
-export type metaType = {
-  title: string,
-  description: string,
-  date: string,
-  slug: string,
-};
+const thoughtsDirectory = path.join(process.cwd(), 'thoughts');
 
-export function getAllThoughts(): Thought[] {
+/* ----------------------------
+   Build-time data
+----------------------------- */
+export const getStaticProps: GetStaticProps = async () => {
   const fileNames = fs.readdirSync(thoughtsDirectory);
 
-  return fileNames
+  const thoughts: Thought[] = fileNames
     .filter((fileName) => fileName.endsWith('.md'))
     .map((fileName) => {
       const slug = fileName.replace(/\.md$/, '');
@@ -31,14 +36,29 @@ export function getAllThoughts(): Thought[] {
 
       return {
         slug,
-        content,              
+        content,
         meta: data as metaType,
       };
     });
+
+  // Optionally sort by date descending
+  thoughts.sort((a, b) => (a.meta.date < b.meta.date ? 1 : -1));
+
+  return {
+    props: {
+      thoughts,
+    },
+  };
+};
+
+/* ----------------------------
+   Page component
+----------------------------- */
+interface ThoughtsPageProps {
+  thoughts: Thought[];
 }
 
-export default function Thoughts() {
-  const thoughts = getAllThoughts();
+export default function ThoughtsPage({ thoughts }: ThoughtsPageProps) {
   return (
     <section className="md-content thoughts">
       <h1>Thoughts</h1>
@@ -48,7 +68,7 @@ export default function Thoughts() {
         {thoughts.map((thought, index) => (
           <li className="" key={index}>
             <span className="mr-[2.15rem]">{thought.meta.date}</span>
-            <a href={"/thoughts/" + thought.meta.slug }>
+            <a href={`/thoughts/${thought.meta.slug}`}>
               {thought.meta.title}
             </a>
           </li>

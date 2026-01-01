@@ -1,4 +1,5 @@
-export default async function Resume() {
+import Head from 'next/head'
+export default function Resume() {
   return (
     <section className="resume">
       <h1>Ken Kozma</h1>

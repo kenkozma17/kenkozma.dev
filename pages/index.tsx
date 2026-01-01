@@ -5,32 +5,38 @@ import matter from 'gray-matter';
 import fs from 'fs';
 import { ThoughtMeta } from '@/types/thoughts';
 
-export async function getHome(slug: string) {
-  const postsDirectory = path.join(process.cwd(), 'pages');
-  const fullPath = path.join(postsDirectory, 'home.md');
+export type ParamsType = {
+  slug: string;
+};
+
+interface PageProps {
+  contentHtml: string
+  meta: ThoughtMeta
+}
+
+export async function getStaticProps({ params }: { params: ParamsType }) {
+  const postsDir = path.join(process.cwd(), 'md-pages');
+  const fullPath = path.join(postsDir, `index.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
- 
-  // Use gray-matter to parse the post metadata section
   const { data, content } = matter(fileContents);
- 
-  // Use remark to convert markdown into HTML string
+
   const processedContent = await remark()
     .use(html)
     .process(content);
   const contentHtml = processedContent.toString();
- 
+
   return {
-    slug,
-    contentHtml,
-    meta: data as ThoughtMeta
+    props: {
+      contentHtml,
+      meta: data as ThoughtMeta
+    }
   };
 } 
 
-export default async function Home() {
-  const thought = await getHome('home');
+export default function Index({ contentHtml }: PageProps) {
   return (
     <section className="md-content">
-      <div dangerouslySetInnerHTML={{ __html: thought.contentHtml }} />
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
     </section>
   );
 }

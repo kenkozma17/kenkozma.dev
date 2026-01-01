@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import SideNav from "@/components/navigation/SideNav";
 import { Inter_Tight, Lora } from "next/font/google";
-import "./globals.css";
+import "../styles/globals.css";
 
 const InterTight = Inter_Tight({
   variable: "--font-inter-tight",
