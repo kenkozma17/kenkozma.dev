@@ -1,3 +1,9 @@
+---
+title: About Me
+date: "Jan 1, 2026"
+description: An overview of my background as a web developer, including agency experience, technical strengths, and the approach I take to building thoughtful web experiences.
+---
+
 # About
 My name is Ken Kozma and I'm a full stack web developer living between the Philippines 🇵🇭 and the United States 🇺🇸.
 

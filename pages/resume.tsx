@@ -2,6 +2,10 @@ import Head from 'next/head'
 export default function Resume() {
   return (
     <section className="resume">
+      <Head>
+        <title>Ken Kozma - Resume</title>
+        <meta name="description" content="Professional resume highlighting experience in modern web development, agency collaboration, and performance-driven frontend solutions." />
+      </Head>
       <h1>Ken Kozma</h1>
       <p className="text-[1.45rem]">Senior Front End Developer</p>
 

@@ -1,3 +1,9 @@
+---
+title: Projects
+date: "Dec 28, 2025"
+description: A curated selection of web projects showcasing modern frontend development, performance-focused builds, animation-driven interfaces, and real-world client solutions.
+---
+
 # Notable Projects
 
 ## Commercial Projects

@@ -1,4 +1,4 @@
-// pages/thoughts/[slug].tsx
+import Head from 'next/head'
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -61,6 +61,9 @@ interface Props {
 export default function ThoughtPage({ contentHtml, meta }: Props) {
   return (
     <section className="md-content thoughts">
+      <Head>
+        <title>Ken Kozma — {meta.title}</title>
+      </Head>
       <h1>{meta.title}</h1>
       <p>{meta.date}</p>
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />

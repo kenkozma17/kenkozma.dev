@@ -1,10 +1,7 @@
 ---
-title: My Goals of 2026
-date: "Dec 28, 2025"
+title: Things I won't do in 2026
+date: "Jan 2, 2026"
 description: My first thought post
-tags:
-  - nextjs
-  - markdown
-published: true
-slug: balance-as-a-dad
+slug: "2026-goals"
 ---
+These are my goals

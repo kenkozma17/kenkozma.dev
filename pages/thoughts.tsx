@@ -1,4 +1,4 @@
-// pages/thoughts/index.tsx
+import Head from "next/head";
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -61,6 +61,10 @@ interface ThoughtsPageProps {
 export default function ThoughtsPage({ thoughts }: ThoughtsPageProps) {
   return (
     <section className="md-content thoughts">
+      <Head>
+        <title>Ken Kozma - Thoughts</title>
+        <meta name="description" content="Writing on web development, agency work, personal projects, and hobbies—sharing lessons, ideas, and experiences beyond just code." />
+      </Head>
       <h1>Thoughts</h1>
       <p>Welcome to my personal blog where I share what I think is interesting in life.</p>
       <hr />
