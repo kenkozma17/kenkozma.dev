@@ -23,7 +23,7 @@ export async function getStaticProps({ params }: { params: ParamsType }) {
   const { data, content } = matter(fileContents);
 
   const processedContent = await remark()
-    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(remarkRehype, {  })
     .use(rehypeRaw)
     .use(rehypeStringify)
     .process(content);
