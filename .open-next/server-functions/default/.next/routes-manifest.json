@@ -1,7 +1,7 @@
 {
   "version": 3,
   "pages404": true,
-  "appType": "hybrid",
+  "appType": "pages",
   "caseSensitive": false,
   "basePath": "",
   "redirects": [
@@ -46,22 +46,10 @@
       "namedRegex": "^/(?:/)?$"
     },
     {
-      "page": "/_global-error",
-      "regex": "^/_global\\-error(?:/)?$",
+      "page": "/naomi",
+      "regex": "^/naomi(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/_global\\-error(?:/)?$"
-    },
-    {
-      "page": "/_not-found",
-      "regex": "^/_not\\-found(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/_not\\-found(?:/)?$"
-    },
-    {
-      "page": "/favicon.ico",
-      "regex": "^/favicon\\.ico(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/favicon\\.ico(?:/)?$"
+      "namedRegex": "^/naomi(?:/)?$"
     },
     {
       "page": "/resume",
@@ -76,7 +64,32 @@
       "namedRegex": "^/thoughts(?:/)?$"
     }
   ],
-  "dataRoutes": [],
+  "dataRoutes": [
+    {
+      "page": "/",
+      "dataRouteRegex": "^/_next/data/7H5uEZWCXuV17zlzY\\-Nu9/index\\.json$"
+    },
+    {
+      "page": "/thoughts",
+      "dataRouteRegex": "^/_next/data/7H5uEZWCXuV17zlzY\\-Nu9/thoughts\\.json$"
+    },
+    {
+      "page": "/thoughts/[slug]",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "dataRouteRegex": "^/_next/data/7H5uEZWCXuV17zlzY\\-Nu9/thoughts/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/7H5uEZWCXuV17zlzY\\-Nu9/thoughts/(?<nxtPslug>[^/]+?)\\.json$"
+    },
+    {
+      "page": "/[slug]",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "dataRouteRegex": "^/_next/data/7H5uEZWCXuV17zlzY\\-Nu9/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/7H5uEZWCXuV17zlzY\\-Nu9/(?<nxtPslug>[^/]+?)\\.json$"
+    }
+  ],
   "rsc": {
     "header": "rsc",
     "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",

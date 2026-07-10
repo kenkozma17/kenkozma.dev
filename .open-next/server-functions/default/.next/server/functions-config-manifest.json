@@ -1,7 +1,4 @@
 {
   "version": 1,
-  "functions": {
-    "/[slug]": {},
-    "/thoughts/[slug]": {}
-  }
+  "functions": {}
 }
