@@ -1,36 +1,10 @@
 {
   "version": 4,
   "routes": {
-    "/thoughts": {
+    "/": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/hzjm1yylUzKOZBeQFuE_S/thoughts.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/thoughts/2026-goals": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/thoughts/[slug]",
-      "dataRoute": "/_next/data/hzjm1yylUzKOZBeQFuE_S/thoughts/2026-goals.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/thoughts/it-was-the-damn-phone": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/thoughts/[slug]",
-      "dataRoute": "/_next/data/hzjm1yylUzKOZBeQFuE_S/thoughts/it-was-the-damn-phone.json",
+      "dataRoute": "/_next/data/U6aE-sLq0K1VzsKWeoBDb/index.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -43,7 +17,7 @@
     "/projects": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/[slug]",
-      "dataRoute": "/_next/data/hzjm1yylUzKOZBeQFuE_S/projects.json",
+      "dataRoute": "/_next/data/U6aE-sLq0K1VzsKWeoBDb/projects.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -53,10 +27,36 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/": {
+    "/thoughts": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/hzjm1yylUzKOZBeQFuE_S/index.json",
+      "dataRoute": "/_next/data/U6aE-sLq0K1VzsKWeoBDb/thoughts.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/thoughts/2026-goals": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/thoughts/[slug]",
+      "dataRoute": "/_next/data/U6aE-sLq0K1VzsKWeoBDb/thoughts/2026-goals.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/thoughts/it-was-the-damn-phone": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/thoughts/[slug]",
+      "dataRoute": "/_next/data/U6aE-sLq0K1VzsKWeoBDb/thoughts/it-was-the-damn-phone.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -70,9 +70,9 @@
   "dynamicRoutes": {
     "/thoughts/[slug]": {
       "routeRegex": "^/thoughts/([^/]+?)(?:/)?$",
-      "dataRoute": "/_next/data/hzjm1yylUzKOZBeQFuE_S/thoughts/[slug].json",
+      "dataRoute": "/_next/data/U6aE-sLq0K1VzsKWeoBDb/thoughts/[slug].json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/hzjm1yylUzKOZBeQFuE_S/thoughts/([^/]+?)\\.json$",
+      "dataRouteRegex": "^/_next/data/U6aE\\-sLq0K1VzsKWeoBDb/thoughts/([^/]+?)\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -84,9 +84,9 @@
     },
     "/[slug]": {
       "routeRegex": "^/([^/]+?)(?:/)?$",
-      "dataRoute": "/_next/data/hzjm1yylUzKOZBeQFuE_S/[slug].json",
+      "dataRoute": "/_next/data/U6aE-sLq0K1VzsKWeoBDb/[slug].json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/hzjm1yylUzKOZBeQFuE_S/([^/]+?)\\.json$",
+      "dataRouteRegex": "^/_next/data/U6aE\\-sLq0K1VzsKWeoBDb/([^/]+?)\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
