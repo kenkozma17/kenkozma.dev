@@ -4,20 +4,7 @@
     "/thoughts": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/7H5uEZWCXuV17zlzY-Nu9/thoughts.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/projects": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[slug]",
-      "dataRoute": "/_next/data/7H5uEZWCXuV17zlzY-Nu9/projects.json",
+      "dataRoute": "/_next/data/Ah-yh3JepbdrDYNrl99rF/thoughts.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -30,7 +17,7 @@
     "/thoughts/2026-goals": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/thoughts/[slug]",
-      "dataRoute": "/_next/data/7H5uEZWCXuV17zlzY-Nu9/thoughts/2026-goals.json",
+      "dataRoute": "/_next/data/Ah-yh3JepbdrDYNrl99rF/thoughts/2026-goals.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -43,7 +30,7 @@
     "/thoughts/it-was-the-damn-phone": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/thoughts/[slug]",
-      "dataRoute": "/_next/data/7H5uEZWCXuV17zlzY-Nu9/thoughts/it-was-the-damn-phone.json",
+      "dataRoute": "/_next/data/Ah-yh3JepbdrDYNrl99rF/thoughts/it-was-the-damn-phone.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -56,7 +43,20 @@
     "/": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/7H5uEZWCXuV17zlzY-Nu9/index.json",
+      "dataRoute": "/_next/data/Ah-yh3JepbdrDYNrl99rF/index.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/projects": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[slug]",
+      "dataRoute": "/_next/data/Ah-yh3JepbdrDYNrl99rF/projects.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -68,11 +68,11 @@
     }
   },
   "dynamicRoutes": {
-    "/[slug]": {
-      "routeRegex": "^/([^/]+?)(?:/)?$",
-      "dataRoute": "/_next/data/7H5uEZWCXuV17zlzY-Nu9/[slug].json",
+    "/thoughts/[slug]": {
+      "routeRegex": "^/thoughts/([^/]+?)(?:/)?$",
+      "dataRoute": "/_next/data/Ah-yh3JepbdrDYNrl99rF/thoughts/[slug].json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/7H5uEZWCXuV17zlzY\\-Nu9/([^/]+?)\\.json$",
+      "dataRouteRegex": "^/_next/data/Ah\\-yh3JepbdrDYNrl99rF/thoughts/([^/]+?)\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -82,11 +82,11 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/thoughts/[slug]": {
-      "routeRegex": "^/thoughts/([^/]+?)(?:/)?$",
-      "dataRoute": "/_next/data/7H5uEZWCXuV17zlzY-Nu9/thoughts/[slug].json",
+    "/[slug]": {
+      "routeRegex": "^/([^/]+?)(?:/)?$",
+      "dataRoute": "/_next/data/Ah-yh3JepbdrDYNrl99rF/[slug].json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/7H5uEZWCXuV17zlzY\\-Nu9/thoughts/([^/]+?)\\.json$",
+      "dataRouteRegex": "^/_next/data/Ah\\-yh3JepbdrDYNrl99rF/([^/]+?)\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
