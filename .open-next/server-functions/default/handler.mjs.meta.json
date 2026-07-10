@@ -3525,7 +3525,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/next/dist/server/load-manifest.external.js": {
-      "bytes": 16183,
+      "bytes": 16167,
       "imports": [
         {
           "path": "path",
@@ -5784,7 +5784,7 @@
       "format": "cjs"
     },
     "node_modules/next/dist/server/load-manifest.external.js": {
-      "bytes": 16183,
+      "bytes": 16167,
       "imports": [
         {
           "path": "path",
@@ -8030,7 +8030,7 @@
       "format": "esm"
     },
     ".open-next/server-functions/default/index.mjs": {
-      "bytes": 80562,
+      "bytes": 80546,
       "imports": [
         {
           "path": "node:module",
@@ -9477,7 +9477,7 @@
           "bytesInOutput": 589
         },
         ".open-next/server-functions/default/node_modules/next/dist/server/load-manifest.external.js": {
-          "bytesInOutput": 11771
+          "bytesInOutput": 11755
         },
         "node_modules/next/dist/compiled/@vercel/og/index.edge.js": {
           "bytesInOutput": 534861
@@ -9870,7 +9870,7 @@
           "bytesInOutput": 554
         },
         "node_modules/next/dist/server/load-manifest.external.js": {
-          "bytesInOutput": 11737
+          "bytesInOutput": 11721
         },
         "node_modules/next/dist/server/runtime-reacts.external.js": {
           "bytesInOutput": 781
@@ -10194,10 +10194,10 @@
           "bytesInOutput": 4974
         },
         ".open-next/server-functions/default/index.mjs": {
-          "bytesInOutput": 55576
+          "bytesInOutput": 55560
         }
       },
-      "bytes": 4357879
+      "bytes": 4357831
     }
   }
 }
