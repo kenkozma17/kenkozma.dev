@@ -68,27 +68,27 @@
   "dataRoutes": [
     {
       "page": "/",
-      "dataRouteRegex": "^/_next/data/U6aE\\-sLq0K1VzsKWeoBDb/index\\.json$"
+      "dataRouteRegex": "^/_next/data/LAC519YbuwVsk4nKVUlzZ/index\\.json$"
     },
     {
       "page": "/thoughts",
-      "dataRouteRegex": "^/_next/data/U6aE\\-sLq0K1VzsKWeoBDb/thoughts\\.json$"
+      "dataRouteRegex": "^/_next/data/LAC519YbuwVsk4nKVUlzZ/thoughts\\.json$"
     },
     {
       "page": "/thoughts/[slug]",
       "routeKeys": {
         "nxtPslug": "nxtPslug"
       },
-      "dataRouteRegex": "^/_next/data/U6aE\\-sLq0K1VzsKWeoBDb/thoughts/([^/]+?)\\.json$",
-      "namedDataRouteRegex": "^/_next/data/U6aE\\-sLq0K1VzsKWeoBDb/thoughts/(?<nxtPslug>[^/]+?)\\.json$"
+      "dataRouteRegex": "^/_next/data/LAC519YbuwVsk4nKVUlzZ/thoughts/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/LAC519YbuwVsk4nKVUlzZ/thoughts/(?<nxtPslug>[^/]+?)\\.json$"
     },
     {
       "page": "/[slug]",
       "routeKeys": {
         "nxtPslug": "nxtPslug"
       },
-      "dataRouteRegex": "^/_next/data/U6aE\\-sLq0K1VzsKWeoBDb/([^/]+?)\\.json$",
-      "namedDataRouteRegex": "^/_next/data/U6aE\\-sLq0K1VzsKWeoBDb/(?<nxtPslug>[^/]+?)\\.json$"
+      "dataRouteRegex": "^/_next/data/LAC519YbuwVsk4nKVUlzZ/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/LAC519YbuwVsk4nKVUlzZ/(?<nxtPslug>[^/]+?)\\.json$"
     }
   ],
   "rsc": {
