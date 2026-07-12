@@ -1,27 +1,6 @@
-import { remark } from 'remark';
-import remarkRehype from 'remark-rehype'
-import rehypeRaw from 'rehype-raw'
-import rehypeStringify from 'rehype-stringify'
-import path from 'path';
-import matter from 'gray-matter';
-import fs from 'fs';
+import { GetStaticProps, GetStaticPaths } from 'next';
+import { PROJECTS_PAGE } from '@/data/siteContent';
 import { ThoughtMeta } from '@/types/thoughts';
-
-
-export async function getStaticPaths() {
-  const postsDirectory = path.join(process.cwd(), 'md-pages'); 
-  const files = fs.readdirSync(postsDirectory)
-
-  const paths = files
-    .map(file => file.replace('.md', ''))
-    .filter(slug => slug !== 'index')
-    .map(slug => ({ params: { slug } }))
-
-  return {
-    paths,
-    fallback: false
-  }
-}
 
 export type ParamsType = {
   slug: string;
@@ -32,26 +11,34 @@ interface PageProps {
   meta: ThoughtMeta
 }
 
-export async function getStaticProps({ params }: { params: ParamsType }) {
-  const postsDir = path.join(process.cwd(), 'md-pages');
-  const fullPath = path.join(postsDir, `${params.slug}.md`);
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
-  const { data, content } = matter(fileContents);
+const STATIC_PAGES: Record<string, { contentHtml: string; meta: ThoughtMeta }> = {
+  projects: {
+    contentHtml: PROJECTS_PAGE.contentHtml,
+    meta: PROJECTS_PAGE.meta,
+  },
+};
 
-  const processedContent = await remark()
-    .use(remarkRehype, { allowDangerousHtml: true })
-    .use(rehypeRaw)
-    .use(rehypeStringify)
-    .process(content);
-  const contentHtml = processedContent.toString();
+export const getStaticPaths: GetStaticPaths<ParamsType> = async () => {
+  return {
+    paths: Object.keys(STATIC_PAGES).map((slug) => ({ params: { slug } })),
+    fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps<PageProps, ParamsType> = async ({ params }) => {
+  const slug = params?.slug ?? '';
+  const page = STATIC_PAGES[slug];
+
+  if (!page) {
+    return {
+      notFound: true,
+    };
+  }
 
   return {
-    props: {
-      contentHtml,
-      meta: data as ThoughtMeta
-    }
+    props: page,
   };
-}
+};
 
 export default function Page({ contentHtml }: PageProps) {
   return (

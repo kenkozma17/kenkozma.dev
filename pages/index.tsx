@@ -1,41 +1,20 @@
-import { remark } from 'remark';
-import remarkRehype from 'remark-rehype'
-import rehypeRaw from 'rehype-raw'
-import rehypeStringify from 'rehype-stringify'
-import path from 'path';
-import matter from 'gray-matter';
-import fs from 'fs';
+import { GetStaticProps } from 'next';
+import { ABOUT_PAGE } from '@/data/siteContent';
 import { ThoughtMeta } from '@/types/thoughts';
-
-export type ParamsType = {
-  slug: string;
-};
 
 interface PageProps {
   contentHtml: string
   meta: ThoughtMeta
 }
 
-export async function getStaticProps({ params }: { params: ParamsType }) {
-  const postsDir = path.join(process.cwd(), 'md-pages');
-  const fullPath = path.join(postsDir, `index.md`);
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
-  const { data, content } = matter(fileContents);
-
-  const processedContent = await remark()
-    .use(remarkRehype, {  })
-    .use(rehypeRaw)
-    .use(rehypeStringify)
-    .process(content);
-  const contentHtml = processedContent.toString();
-
+export const getStaticProps: GetStaticProps<PageProps> = async () => {
   return {
     props: {
-      contentHtml,
-      meta: data as ThoughtMeta
-    }
+      contentHtml: ABOUT_PAGE.contentHtml,
+      meta: ABOUT_PAGE.meta as ThoughtMeta,
+    },
   };
-} 
+};
 
 export default function Index({ contentHtml }: PageProps) {
   return (

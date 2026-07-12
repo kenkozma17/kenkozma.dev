@@ -1,9 +1,13 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 export default function SideNav() {
-  const router = useRouter();
-  const pathname = (router.asPath || router.pathname || "").split("?")[0];
+  const [pathname, setPathname] = useState("");
+
+  useEffect(() => {
+    setPathname(window.location.pathname);
+  }, []);
+
   return (
     <nav className="xl:pr-[3.25rem] md:pr-[1.75rem] md:border-none md:pb-0 md:mb-0 mb-[1.5rem] pb-[1rem] border-b border-[#D3D3D3] side-nav">
       <ul className="flex md:flex-col flex-row md:justify-start justify-end gap-[1rem] md:gap-0 text-right font-[lora-sans]">

@@ -1,52 +1,27 @@
 import Head from "next/head";
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
 import { GetStaticProps } from 'next';
+import { THOUGHTS } from '@/data/siteContent';
 
 export type metaType = {
   title: string;
   description: string;
   date: string;
-  slug: string;
 };
 
 export type Thought = {
   slug: string;
-  content: string;
+  contentHtml: string;
+  excerpt: string;
   meta: metaType;
 };
-
-const thoughtsDirectory = path.join(process.cwd(), 'thoughts');
 
 /* ----------------------------
    Build-time data
 ----------------------------- */
 export const getStaticProps: GetStaticProps = async () => {
-  const fileNames = fs.readdirSync(thoughtsDirectory);
-
-  const thoughts: Thought[] = fileNames
-    .filter((fileName) => fileName.endsWith('.md'))
-    .map((fileName) => {
-      const slug = fileName.replace(/\.md$/, '');
-      const fullPath = path.join(thoughtsDirectory, fileName);
-      const fileContents = fs.readFileSync(fullPath, 'utf8');
-
-      const { data, content } = matter(fileContents);
-
-      return {
-        slug,
-        content,
-        meta: data as metaType,
-      };
-    });
-
-  // Optionally sort by date descending
-  thoughts.sort((a, b) => (a.meta.date < b.meta.date ? 1 : -1));
-
   return {
     props: {
-      thoughts,
+      thoughts: THOUGHTS,
     },
   };
 };
@@ -72,7 +47,7 @@ export default function ThoughtsPage({ thoughts }: ThoughtsPageProps) {
         {thoughts.map((thought, index) => (
           <li className="flex md:mb-[.25rem] mb-[.45rem] items-start" key={index}>
             <span className="shrink-0 w-[6rem] inline-block mr-[1.15rem]">{thought.meta.date}</span>
-            <a className="underline-offset-[3px]" href={`/thoughts/${thought.meta.slug}`}>
+            <a className="underline-offset-[3px]" href={`/thoughts/${thought.slug}`}>
               {thought.meta.title}
             </a>
           </li>

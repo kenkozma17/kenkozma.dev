@@ -1,13 +1,7 @@
 import Head from 'next/head'
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import { remark } from 'remark';
-import html from 'remark-html';
 import { GetStaticProps, GetStaticPaths } from 'next';
+import { THOUGHTS } from '@/data/siteContent';
 import { ThoughtMeta } from '@/types/thoughts';
-
-const thoughtsDirectory = path.join(process.cwd(), 'thoughts');
 
 export type ThoughtPageProps = {
   contentHtml: string;
@@ -18,12 +12,8 @@ export type ThoughtPageProps = {
    Get all paths
 ----------------------------- */
 export const getStaticPaths: GetStaticPaths = async () => {
-  const files = fs.readdirSync(thoughtsDirectory)
-    .filter((file) => file.endsWith('.md'))
-    .map((file) => file.replace(/\.md$/, ''));
-
-  const paths = files.map((slug) => ({
-    params: { slug },
+  const paths = THOUGHTS.map((thought) => ({
+    params: { slug: thought.slug },
   }));
 
   return { paths, fallback: false }; // fallback false = 404 for unknown
@@ -34,18 +24,18 @@ export const getStaticPaths: GetStaticPaths = async () => {
 ----------------------------- */
 export const getStaticProps: GetStaticProps<ThoughtPageProps> = async ({ params }) => {
   const slug = params?.slug as string;
-  const fullPath = path.join(thoughtsDirectory, `${slug}.md`);
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const thought = THOUGHTS.find((item) => item.slug === slug);
 
-  const { data, content } = matter(fileContents);
-
-  const processedContent = await remark().use(html).process(content);
-  const contentHtml = processedContent.toString();
+  if (!thought) {
+    return {
+      notFound: true,
+    };
+  }
 
   return {
     props: {
-      contentHtml,
-      meta: data as ThoughtMeta,
+      contentHtml: thought.contentHtml,
+      meta: thought.meta as ThoughtMeta,
     },
   };
 };
