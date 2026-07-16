@@ -63,7 +63,7 @@ export default function NaomiPage() {
 
       <p>
         If you genuinely enjoy spending time with children and creating a fun, safe, and nurturing
-        environment, we&apos;d love to hear from you!
+        environment, we&apos;d love to hear from you! Please reach out to us via <a href="mailto:kenkozma17@gmail.com">email</a>, <a href="tel:639690426656">phone</a> or <a href="https://m.me/kenkozma21">Facebook Messenger</a>.
       </p>
     </section>
   )

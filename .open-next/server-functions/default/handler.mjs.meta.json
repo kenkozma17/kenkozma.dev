@@ -4423,7 +4423,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/next/dist/server/require.js": {
-      "bytes": 23176,
+      "bytes": 24111,
       "imports": [
         {
           "path": "path",
@@ -6976,7 +6976,7 @@
           "bytesInOutput": 2613
         },
         ".open-next/server-functions/default/node_modules/next/dist/server/require.js": {
-          "bytesInOutput": 20288
+          "bytesInOutput": 21217
         },
         ".open-next/server-functions/default/node_modules/next/dist/lib/wait.js": {
           "bytesInOutput": 341
@@ -7108,7 +7108,7 @@
           "bytesInOutput": 59150
         }
       },
-      "bytes": 2220886
+      "bytes": 2221815
     }
   }
 }
