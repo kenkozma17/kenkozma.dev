@@ -27,7 +27,6 @@ export default function NaomiPage() {
         schedule of <b>3-4 hours/day 3-5x/week</b>. Students or individuals with a flexible schedule are encouraged to apply as we don't follow
         a strict schedule and can work around your availability.
       </p>
-      <p><b>Starting salary:</b> <i>P130/hour</i> (negotiable based on initial performance and experience).</p>
 
       <h2 className="mt-[.85rem] mb-[.5rem]">Responsibilities</h2>
       <ul className="mb-4">
@@ -60,6 +59,8 @@ export default function NaomiPage() {
         <li>Enjoys playing, reading, and engaging with toddlers.</li>
         <li>Has previous childcare experience (preferred).</li>
       </ul>
+
+      <p><b>Starting salary:</b> <i>P130/hour</i> (negotiable based on initial performance and experience).</p>
 
       <p>
         If you genuinely enjoy spending time with children and creating a fun, safe, and nurturing

@@ -3,9 +3,9 @@
   "/_error": "pages/_error.js",
   "/naomi": "pages/naomi.html",
   "/resume": "pages/resume.html",
-  "/thoughts": "pages/thoughts.js",
   "/": "pages/index.js",
   "/[slug]": "pages/[slug].js",
+  "/thoughts": "pages/thoughts.js",
   "/thoughts/[slug]": "pages/thoughts/[slug].js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html"
