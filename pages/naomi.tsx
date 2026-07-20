@@ -60,7 +60,7 @@ export default function NaomiPage() {
         <li>Has previous childcare experience (preferred).</li>
       </ul>
 
-      <p><b>Starting salary:</b> <i>P130/hour</i> (negotiable based on initial performance and experience).</p>
+      <p><b>Starting salary:</b> <i>P100-P130/hour</i> (negotiable based on initial performance and experience).</p>
 
       <p>
         If you genuinely enjoy spending time with children and creating a fun, safe, and nurturing
