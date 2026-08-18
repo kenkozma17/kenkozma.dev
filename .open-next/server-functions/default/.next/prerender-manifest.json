@@ -4,7 +4,7 @@
     "/": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/9Gwqbxb2p6L2n12ScJpSs/index.json",
+      "dataRoute": "/_next/data/HbXk39V-ME5fqJIohkKGp/index.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -17,7 +17,7 @@
     "/projects": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/[slug]",
-      "dataRoute": "/_next/data/9Gwqbxb2p6L2n12ScJpSs/projects.json",
+      "dataRoute": "/_next/data/HbXk39V-ME5fqJIohkKGp/projects.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -30,7 +30,7 @@
     "/thoughts": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/9Gwqbxb2p6L2n12ScJpSs/thoughts.json",
+      "dataRoute": "/_next/data/HbXk39V-ME5fqJIohkKGp/thoughts.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -43,7 +43,7 @@
     "/thoughts/2026-goals": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/thoughts/[slug]",
-      "dataRoute": "/_next/data/9Gwqbxb2p6L2n12ScJpSs/thoughts/2026-goals.json",
+      "dataRoute": "/_next/data/HbXk39V-ME5fqJIohkKGp/thoughts/2026-goals.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -56,7 +56,7 @@
     "/thoughts/it-was-the-damn-phone": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/thoughts/[slug]",
-      "dataRoute": "/_next/data/9Gwqbxb2p6L2n12ScJpSs/thoughts/it-was-the-damn-phone.json",
+      "dataRoute": "/_next/data/HbXk39V-ME5fqJIohkKGp/thoughts/it-was-the-damn-phone.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -70,9 +70,9 @@
   "dynamicRoutes": {
     "/thoughts/[slug]": {
       "routeRegex": "^/thoughts/([^/]+?)(?:/)?$",
-      "dataRoute": "/_next/data/9Gwqbxb2p6L2n12ScJpSs/thoughts/[slug].json",
+      "dataRoute": "/_next/data/HbXk39V-ME5fqJIohkKGp/thoughts/[slug].json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/9Gwqbxb2p6L2n12ScJpSs/thoughts/([^/]+?)\\.json$",
+      "dataRouteRegex": "^/_next/data/HbXk39V\\-ME5fqJIohkKGp/thoughts/([^/]+?)\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -84,9 +84,9 @@
     },
     "/[slug]": {
       "routeRegex": "^/([^/]+?)(?:/)?$",
-      "dataRoute": "/_next/data/9Gwqbxb2p6L2n12ScJpSs/[slug].json",
+      "dataRoute": "/_next/data/HbXk39V-ME5fqJIohkKGp/[slug].json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/9Gwqbxb2p6L2n12ScJpSs/([^/]+?)\\.json$",
+      "dataRouteRegex": "^/_next/data/HbXk39V\\-ME5fqJIohkKGp/([^/]+?)\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",

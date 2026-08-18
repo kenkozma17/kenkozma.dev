@@ -4,8 +4,8 @@
   ],
   "devFiles": [],
   "lowPriorityFiles": [
-    "static/9Gwqbxb2p6L2n12ScJpSs/_buildManifest.js",
-    "static/9Gwqbxb2p6L2n12ScJpSs/_ssgManifest.js"
+    "static/HbXk39V-ME5fqJIohkKGp/_buildManifest.js",
+    "static/HbXk39V-ME5fqJIohkKGp/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
@@ -39,7 +39,7 @@
       "static/chunks/webpack-8497fbbedd21184c.js",
       "static/chunks/framework-b80d1ce293d4d94e.js",
       "static/chunks/main-ccdacb85fc2cf31d.js",
-      "static/chunks/pages/naomi-34ec6a76188c61a5.js"
+      "static/chunks/pages/naomi-f77bbc8dea989280.js"
     ],
     "/resume": [
       "static/chunks/webpack-8497fbbedd21184c.js",

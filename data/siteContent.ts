@@ -99,6 +99,30 @@ export const PROJECTS_PAGE: StaticPageContent = {
 
 export const THOUGHTS: ThoughtContent[] = [
   {
+    slug: 'traveling-with-your-child-0-15-months',
+    meta: {
+      title: 'Guide to traveling with your child (0 - 15 months)',
+      date: 'Aug 18, 2026',
+      description:
+        'A practical guide based on early domestic and international trips with an infant and young toddler.',
+    },
+    excerpt:
+      'A practical guide for parents learning how to travel with an infant or young toddler without burning out immediately.',
+    contentHtml: `<p>For some parents, giving up their nomadic lifestyle after having children can be a difficult realization to accept. This article is about the mistakes that my wife and I made during the first few domestic and international trips with an infant that eventually grew to become a toddler.</p>
+<h2>Spend a little more</h2>
+<p>Naps are crucial to a baby’s long-term development and general well-being during travel so if your baby is somewhat of a stubborn sleeper like ours is, getting those important naps in between hectic chaos of traveling domestic and/or internationally is the difference between instant regret or a smooth beginning to your family adventure.</p>
+<p>This means that you must put a massive consideration on your flight’s departure and arrival time. We’ve been punished a few times for prioritizing cheaper airfare which means booking red-eye flights scheduled towards the early to late evenings which our little one did not handle well and significantly emptied our energy levels right at the beginning of our trip.</p>
+<p>Spend a little more on the day time flights to keep your little one happy and avoid burning out immediately into your trip.</p>
+<h2>Keep them entertained</h2>
+<p>Whether your flight, road trip or sea voyage is a quick 1 hour ride or on the longer side of more than 3 hours, make sure to be prepared with various forms of activities or entertainment for your little one.</p>
+<p>We have been guilty on a few occasions for not doing enough preparation when it comes to keeping our little one occupied during the long boring stretches inside airplanes which dries out our energy stores even faster while trying to control a bored toddler.</p>
+<p>Do your due diligence before your trip and make sure you have list of activities or entertainment for your little one to prevent crash outs.</p>
+<h2>Plan for everything</h2>
+<p>If you never had an itinerary while traveling, this is a great time to start. Traveling our little one has forced me to create articulate itineraries to not only get the most of out of each day but make sure we don’t end up in a bad environment for a toddler.</p>
+<p>Make sure to consider baby-friendly accommodation, nearby restaurants and malls before selecting where you will be staying and exploring to avoid headaches in during the trip. I’ve found that spending time to research the area you will be around most has everything you need to accommodate your toddler and your own needs to keep everyone happy.</p>
+<p>Not all of this advice applies to everyone but I hope it’s helpful to others similar to our family. Traveling as a young family can be enjoyable and very rewarding if prepared for and executed properly. A little sacrifice goes a long way for your family’s adventures and memories.</p>`,
+  },
+  {
     slug: 'it-was-the-damn-phone',
     meta: {
       title: 'My Mom was right, It was the damn phone',
